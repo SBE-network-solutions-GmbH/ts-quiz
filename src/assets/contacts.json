@@ -1,0 +1,26 @@
+{
+  "0": {
+    "firstName": "Marco",
+    "lastName": "Polo",
+    "birthday": "1254-01-01",
+    "avatar": "../../assets/avatars/marco.jpg"
+  },
+  "1": {
+    "firstName": "Donald",
+    "lastName": "Duck",
+    "birthday": "1931-03-13",
+    "avatar": "../../assets/avatars/donald.png"
+  },
+  "2": {
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "birthday": "1980-07-31",
+    "avatar": "../../assets/avatars/harry.jpg"
+  },
+  "3": {
+    "firstName": "Daenerys",
+    "lastName": "Targaryen",
+    "birthday": "1986-10-23",
+    "avatar": "../../assets/avatars/daenerys.jpg"
+  }
+}
