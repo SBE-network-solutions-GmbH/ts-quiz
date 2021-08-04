@@ -4,23 +4,26 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
-<ion-button (click)="personService.addPerson()" color="success"><ion-icon name="add-outline" slot="icon-only"></ion-icon></ion-button>
+      <ion-button (click)="personService.addPerson(personSubject)" color="success">
+        <ion-icon name="add-outline" slot="icon-only"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Contacts</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-list *ngFor="let person of persons">
-  <ion-item>
-    <ion-avatar>
-      <img [src]="person.avatar">
-    </ion-avatar>
-    <ion-label>
-      <h3>{{person.firstName}} {{person.lastName}}</h3>
-      <p>{{person.birthday}}</p>
-    </ion-label>
-  </ion-item>
+  <ion-list *ngFor="let person of persons">
+    <ion-item>
+      <ion-avatar>
+        <img [src]="person.avatar">
+      </ion-avatar>
+      <ion-label>
+        <h3>{{person.name}}</h3>
+        <p>{{person.birthday}}</p>
+      </ion-label>
+      <ion-button slot="end" fill="clear" (click)="delete(person)" color="danger"><ion-icon name="trash-outline" slot="icon-only"></ion-icon></ion-button>
+    </ion-item>
 
-</ion-list>
+  </ion-list>
 </ion-content>

@@ -9,16 +9,12 @@ import {Router} from "@angular/router";
 export class HomePage {
 
   constructor(private router: Router) {
-// this.setEventListeners(); //null pointer
+    this.setEventListeners();
   }
 
-  ionViewDidEnter(){
-     this.setEventListeners();
-  }
-
-  setEventListeners(){
-    document.getElementById('contacts').addEventListener("click", this.openPage.bind(this,'contacts'));
-    document.getElementById('notes').addEventListener("click", this.openPage.bind(this,'notes'));
+  setEventListeners() {
+    document.getElementById('contacts').addEventListener("click", this.openPage.bind(this, 'contacts'));
+    document.getElementById('notes').addEventListener("click", this.openPage.bind(this, 'notes'));
   }
 
   openPage(_key: string, _event) {
